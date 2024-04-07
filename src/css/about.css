@@ -1,0 +1,84 @@
+.jura-regular {
+	font-family: "Jura", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+ }
+
+
+ body {
+	background-color: #F8B4D9;
+	font-family: "Just Me Again Down Here";
+	margin: 15px;
+}
+
+header{
+	text-align: center;
+	font-size: 4vw;
+	font-size: 6vh;
+	color: #000000; /* Font color */
+	text-shadow:
+		 -4px -4px 0 #FFFFFF,
+		  1px -3px 0 #FFFFFF,
+		 -1px  3px 0 #FFFFFF,
+		  1px  3px 0 #FFFFFF; /* Stroke color and offset */
+}
+
+h2{
+	text-align:left;
+	padding-left: 10%;
+	font-size: 7vh;
+	color: #000000; /* Font color */
+	text-shadow:
+		 -1px -1px 0 #FFFFFF,
+		  1px -1px 0 #FFFFFF,
+		 -1px  1px 0 #FFFFFF,
+		  1px  1px 0 #FFFFFF; /* Stroke color and offset */
+}
+
+p {
+	font-family: "Jura", sans-serif;
+	margin: auto;
+	width: 80%;
+	line-height: 150%;
+	font-size: 2.7vh;
+	padding-bottom: 40px;
+}
+
+
+
+
+
+/*
+CSS controls the styling of the page.
+You can write a color in directly, or use variables.
+Try changing the color from blue to red in the
+primary color variable below.
+*/
+
+:root {
+	--color-primary: blue;
+	--color-secondary: #c00;
+}
+
+/*
+CSS doesn't allow variables to be used in media
+queries just yet, but you can use these values
+to help you out.
+
+	--size-xs: 320px;
+	--size-sm: 480px;
+	--size-md: 768px;
+	--size-lg: 1024px;
+	--size-xl: 1200px;
+*/
+
+
+
+/* This uses the same value as --size-xs. */
+@media screen and (width >= 320px) {
+	.content-container {
+		margin: 0 auto;
+		max-width: 768px;
+	}
+}
